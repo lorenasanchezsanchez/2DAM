@@ -2,14 +2,14 @@
 template: document.html
 title: Inici
 cover:
-    title: Títol del teu curs
+    title: Desenvolupament d'interficies - 2DAM
     icon: material/school
 hide:
   - navigation
 ---
 
 ## Descripció del curs
-Aquesta és la pàgina principal del teu curs. Descriu ací el contingut, els objectius i la metodologia.
+DESENVOLUPAMENT D'INTERFICIES.
 
 **Exemples d'icones que pots utilitzar:**
 
