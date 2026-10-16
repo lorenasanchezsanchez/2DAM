@@ -1,3 +1,9 @@
+---
+template: document.html
+title: "Bloc 2: Branques"
+alias: branques-index
+---
+
 ﻿<!DOCTYPE html><html lang="es" class="anim dark" data-linea="pink"><head>
 <link rel="icon" data-savepage-href="https://apuntesdam.com/favicon.svg" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMxMzE2MUIiLz48ZyBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMTEgMzJoMTVsMTEtMTFoMTYiLz48cGF0aCBkPSJNMjYgMzJsMTEgMTFoMTYiLz48L2c+PGNpcmNsZSBjeD0iMjYiIGN5PSIzMiIgcj0iNi41IiBmaWxsPSIjMTMxNjFCIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNCIvPjwvc3ZnPg=="><style>.ͼ1.cm-focused {outline: 1px dotted #212121;}
 .ͼ1 {position: relative !important; box-sizing: border-box; display: flex !important; flex-direction: column;}
