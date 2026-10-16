@@ -1,0 +1,21 @@
+{% import "partials/language.html" as lang with context %}
+
+{% if page.meta.git_revision_date_localized %}
+  <div class="md-source-file" style="margin-top: 2rem; display: flex; align-items: center; gap: 1rem;">
+    <a href="https://github.com/lorenasanchezsanchez" target="_blank" rel="noopener noreferrer" style="flex-shrink: 0;">
+      <img src="https://github.com/lorenasanchezsanchez.png?size=48" 
+           alt="Lorena Sánchez" 
+           style="border-radius: 50%; border: 2px solid var(--md-primary-fg-color); width: 48px; height: 48px; transition: transform 0.3s;"
+           onmouseover="this.style.transform='scale(1.1)'" 
+           onmouseout="this.style.transform='scale(1)'"
+           title="Ver perfil de GitHub">
+    </a>
+    <small style="flex-grow: 1;">
+      {% if page.meta.git_creation_date_localized %}
+        <b>Fecha de creación:</b> {{ page.meta.git_creation_date_localized }}
+        <br>
+      {% endif %}
+      <b>Última actualización:</b> {{ page.meta.git_revision_date_localized }}
+    </small>
+  </div>
+{% endif %}

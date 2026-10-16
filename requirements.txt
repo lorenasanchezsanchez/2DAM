@@ -1,0 +1,10 @@
+# El tema personalitzat està a la carpeta temaMaterialLorena/
+mkdocs-material[imaging]
+mkdocs-git-committers-plugin-2~=2.5
+mkdocs-static-i18n
+mkdocs-macros-plugin
+mkdocs-drawio
+mkdocs-awesome-nav
+mkdocs-alias-plugin
+mkdocs-git-revision-date-localized-plugin
+markdown_grid_tables

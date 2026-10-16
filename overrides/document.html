@@ -1,0 +1,76 @@
+{% extends "theme-base.html" %}
+
+{% block announce %}
+{% include "partials/announce.html" %}
+{% endblock %}
+
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{'stylesheets/document.css' | url}}">
+    <link rel="stylesheet" href="{{'stylesheets/cover.css' | url}}">
+    <link rel="stylesheet" href="{{'stylesheets/styles.css' | url}}">
+    <link rel="stylesheet" href="{{'stylesheets/cover_footer.css' | url}}">
+
+    <style>
+        :root {
+            --md-document__header-content-height: 3rem;
+            --md-document__footer-content-height: 3rem;
+        }
+        @media print {
+            :root {
+                --md-document__footer-print-height: 1rem;
+            }
+        }
+    </style>
+{% endblock %}
+
+{% block container %}
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+
+<div class="md-document__header">
+<div class="md-document__header-content"></div>
+</div>
+
+<table class="md-document__print-layout">
+    <thead><tr><td>
+        <div class="md-document__header-space">&nbsp;</div>
+    </td></tr></thead>
+
+    <tbody><tr><td>
+
+<main class="md-document__main">
+    {% if "material/tags" in config.plugins and tags %}
+      {% include "partials/tags.html" %}
+    {% endif %}
+    {% include "partials/cover.html" %}
+    {% include "partials/actions.html" %}
+    {{ page.content }}
+
+    <div class="md-document__print">
+    <div><small>📌 Aquest document pot quedar desactualitzat després d'imprimir-lo. Pots consultar la versió més recent
+    a la <a href="{{ config.site_url }}" target="_blank" rel="noopener noreferrer">pàgina web</a>.</small></div>
+    <div><small> 🌿 Abans d'imprimir aquest document, considera si és realment necessari. Redueix el consum de paper i ajuda a protegir el nostre entorn. </small></div>
+    </div>
+</main>
+
+    </td></tr></tbody>
+
+    <tfoot><tr><td>
+        <div class="md-document__footer-space">&nbsp;</div>
+    </td></tr></tfoot>
+</table>
+
+<div class="md-document__footer">
+<div class="md-document__footer-content"></div>
+{% include "partials/document/print-footer.html" %}
+</div>
+
+{% include "partials/source-file.html" %}
+{% include "partials/feedback.html" %}
+{% include "partials/comments.html" %}
+
+</article>
+</div>
+{% endblock %}
+

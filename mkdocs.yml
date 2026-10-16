@@ -1,0 +1,176 @@
+site_name: "Nombre"
+site_author: "Lorena Sánchez Sánchez"
+site_url: https://lorenasanchezsanchez.github.io/NombreRepo/
+dev_addr: 127.0.0.1:4567
+
+repo_name: lorenasanchezsanchez/CURS_GIT
+repo_url: https://github.com/lorenasanchezsanchez/CURS_GIT
+
+
+
+extra_css:
+  - stylesheets/extra.css
+
+draft_docs: |
+  *_unpublished.md
+  *_draft.md
+
+exclude_docs: |
+  *_excluded.md
+  _*
+
+watch:
+  - overrides
+
+theme:
+  name: temaMaterialLorena
+  custom_dir: overrides
+  icon:
+    logo: simple/git
+
+  cover:
+    logo: false
+    background: false
+
+  # comments:
+  #   repo: lorenasanchezsanchez/repo
+  #   repo_id: TU_REPO_ID
+  #   category: General
+  #   category_id: TU_CATEGORY_ID
+  #   mapping: pathname
+  #   reactions-enabled: true
+
+  # cover: 
+  #   logo: false
+
+  # Palette toggle for light mode
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      primary: 'pink'
+      scheme: default
+      toggle:
+        # icon: material/toggle-switch
+        icon: material/weather-sunny
+        name: Canvia a mode fosc
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: 'pink'
+      scheme: slate
+      toggle:
+        # icon: material/toggle-switch-off-outline
+        icon: material/weather-night
+        name: Canvia a mode clar
+
+plugins:
+  - alias:
+      use_anchor_titles: true
+      use_page_icon: true
+  - awesome-nav
+  - drawio
+  - macros
+  - material/tags
+  - material/search
+  - material/social:
+      enabled: !ENV [CI, false]
+  - temaMaterialLorena/enviorment
+  - temaMaterialLorena/functions:
+      load_file:
+        files_dir: files
+  - temaMaterialLorena/sectionicons
+  - i18n:
+      languages:
+        - locale: ca
+          default: true
+          name: Valencià
+          admonition_translations:
+            info: Informació
+            note: Nota
+            abstract: Resum
+            tip: Consell
+            success: Èxit
+            question: Pregunta
+            warning: Advertència
+            failure: Error
+            danger: Perill
+            example: Exemple
+            quote: Cita
+            docs: Documentació
+            solution: Solució
+            important: Important
+            notice: Fixa't
+            prep: Preparació
+            recommend: Recomanació
+            picture: Imatge
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+      locale: es
+  - git-committers:
+      enabled: !ENV [CI, false]
+      repository: lorenasanchezsanchez/template
+      branch: main
+      exclude_committers:
+        - web-flow
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - markdown_grid_tables
+  - md_in_html
+  - sane_lists
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.blocks.html
+  - pymdownx.blocks.caption:
+      auto: true
+      types:
+        - caption
+        - name: figure-caption
+          prefix: "Figura {}. "
+        - name: shadow-figure-caption
+          prefix: "Figura {}. "
+          classes: shadow
+        - name: "table-caption"
+          prefix: "Taula {}. "
+        - name: attribution
+          classes: attribution
+  - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.emoji:
+      emoji_index: !!python/name:temaMaterialLorena.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.fancylists:
+      inject_class: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.saneheaders
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - toc:
+      permalink: true
+      toc_depth: 4
+  - temaMaterialLorena.extensions.collapse_code:
+      expand_text: ''
+      expand_title: ''
+      collapse_text: ''
+      collapse_title: ''

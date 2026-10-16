@@ -1,0 +1,199 @@
+{% extends "theme-base.html" %}{% extends "theme-base.html" %}
+
+
+
+{% block styles %}{% block styles %}
+
+    {{ super() }}    {{ super() }}
+
+    <link rel="stylesheet" href="{{'stylesheets/document.css' | url}}">    <link rel="stylesheet" href="{{'stylesheets/document.css' | url}}">
+
+    <link rel="stylesheet" href="{{'stylesheets/cover.css' | url}}">    <link rel="stylesheet" href="{{'stylesheets/cover.css' | url}}">
+
+
+
+    {% if self.document_header_content() %}    {% if self.document_header_content() %}
+
+    <style>    <style>
+
+        :root {        :root {
+
+            --md-document__header-content-height: 3rem;            --md-document__header-content-height: 3rem;
+
+        }        }
+
+    </style>    </style>
+
+    {% endif %}    {% endif %}
+
+    {% if self.document_footer_content() %}    {% if self.document_footer_content() %}
+
+    <style>    <style>
+
+        :root {        :root {
+
+            --md-document__footer-content-height: 3rem;            --md-document__footer-content-height: 3rem;
+
+        }        }
+
+    </style>    </style>
+
+    {% endif %}    {% endif %}
+
+    {% if self.document_footer_print() %}    {% if self.document_footer_print() %}
+
+    <style>    <style>
+
+        @media print {        @media print {
+
+            :root {            :root {
+
+                --md-document__footer-print-height: 1rem;                --md-document__footer-print-height: 1rem;
+
+            }            }
+
+        }        }
+
+    </style>    </style>
+
+    {% endif %}    {% endif %}
+
+{% endblock %}{% endblock %}
+
+
+
+{% block container %}{% block container %}
+
+<div class="md-content" data-md-component="content"><div class="md-content" data-md-component="content">
+
+<article class="md-content__inner md-typeset"><article class="md-content__inner md-typeset">
+
+
+
+<div class="md-document__header"><div class="md-document__header">
+
+{% block document_header %}{% block document_header %}
+
+<div class="md-document__header-content">{% block document_header_content %}{% endblock %}</div><div class="md-document__header-content">{% block document_header_content %}{% endblock %}</div>
+
+{% endblock %}{% endblock %}
+
+</div></div>
+
+
+
+<table class="md-document__print-layout"><table class="md-document__print-layout">
+
+    <thead><tr><td>    <thead><tr><td>
+
+        <div class="md-document__header-space">&nbsp;</div>        <div class="md-document__header-space">&nbsp;</div>
+
+    </td></tr></thead>    </td></tr></thead>
+
+
+
+    <tbody><tr><td>    <tbody><tr><td>
+
+
+
+<main class="md-document__main"><main class="md-document__main">
+
+{% block content %}{% block content %}
+
+    {% if "material/tags" in config.plugins and tags %}    {% if "material/tags" in config.plugins and tags %}
+
+      {% include "partials/tags.html" %}      {% include "partials/tags.html" %}
+
+    {% endif %}    {% endif %}
+
+    {% include "partials/cover.html" %}    {% include "partials/cover.html" %}
+
+    {% include "partials/actions.html" %}    {% include "partials/actions.html" %}
+
+    {{ page.content }}    {{ page.content }}
+
+
+
+    <div class="md-document__print">    <div class="md-document__print">
+
+    {% block document_print %}    {% block document_print %}
+
+    <div><small>📌 Aquest document pot quedar desactualitzat després d'imprimir-lo. Pots consultar la versió més recent    <div><small>📌 Aquest document pot quedar desactualitzat després d’imprimir-lo. Pots consultar la versió més recent
+
+    a la <a href="{{ config.site_url }}" target="_blank" rel="noopener noreferrer">pàgina web</a>.</small></div>    a la <a href="{{ config.site_url }}" target="_blank" rel="noopener noreferrer">pàgina web</a>.</small></div>
+
+    <div><small> 🌿 Abans d'imprimir aquest document, considera si és realment necessari. Redueix el consum de paper i ajuda a protegir el nostre entorn. </small></div>    <div><small> 🌿 Abans d’imprimir aquest document, considera si és realment necessari. Redueix el consum de paper i ajuda a protegir el nostre entorn. </small></div>
+
+    {% endblock %}    {% endblock %}
+
+    </div>    </div>
+
+{% endblock %}{% endblock %}
+
+</main></main>
+
+
+
+    </td></tr></tbody>    </td></tr></tbody>
+
+
+
+    <tfoot><tr><td>    <tfoot><tr><td>
+
+        <div class="md-document__footer-space">&nbsp;</div>        <div class="md-document__footer-space">&nbsp;</div>
+
+    </td></tr></tfoot>    </td></tr></tfoot>
+
+</table></table>
+
+
+
+<div class="md-document__footer"><div class="md-document__footer">
+
+{% block document_footer %}{% block document_footer %}
+
+<div class="md-document__footer-content">{% block document_footer_content %}{% endblock %}</div><div class="md-document__footer-content">{% block document_footer_content %}{% endblock %}</div>
+
+{% block document_footer_print %}{% include "partials/document/print-footer.html" %}{% endblock %}{% block document_footer_print %}{% include "partials/document/print-footer.html" %}{% endblock %}
+
+{% endblock %}{% endblock %}
+
+</div></div>
+
+
+
+{% include "partials/source-file.html" %}{% include "partials/source-file.html" %}
+
+{% include "partials/feedback.html" %}{% include "partials/feedback.html" %}
+
+{% include "partials/comments.html" %}{% include "partials/comments.html" %}
+
+</article>
+
+</div><!-- ============ PERFIL DE GITHUB - LORENA ============ -->
+
+{% endblock %}<hr style="margin-top: 3rem; margin-bottom: 2rem; opacity: 0.3;" />
+
+<div style="text-align: center; margin: 2rem 0 3rem 0;">
+  <a href="https://github.com/lorenasanchezsanchez" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+    <img src="https://github.com/lorenasanchezsanchez.png?size=100" 
+         alt="Lorena Sánchez" 
+         style="border-radius: 50%; border: 3px solid var(--md-primary-fg-color); width: 100px; height: 100px; transition: transform 0.3s; display: block; margin: 0 auto;"
+         onmouseover="this.style.transform='scale(1.1)'" 
+         onmouseout="this.style.transform='scale(1)'"
+         title="Ver perfil de GitHub">
+  </a>
+  <p style="margin-top: 1rem; margin-bottom: 0.5rem;">
+    <a href="https://github.com/lorenasanchezsanchez" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: var(--md-default-fg-color);">
+      <strong>👩‍� Lorena Sánchez</strong>
+    </a>
+  </p>
+  <p style="font-size: 0.9rem; color: var(--md-default-fg-color--light); margin-top: 0;">
+    Desarrolladora y Educadora
+  </p>
+</div>
+<!-- ============================================= -->
+
+</article>
+</div>
+{% endblock %}
