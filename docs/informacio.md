@@ -43,13 +43,8 @@ Este sitio web está desarrollado con las siguientes herramientas y librerías:
 
 
 ## :material-account-group: Autor/a
-- **Nombre**: Tu nombre
-- **Email**: tu.email@example.com
-- **GitHub**: [@usuari](https://github.com/usuari)
+- **Nombre**: Lorena Sánchez Sánchez
+- **Email**: l.sanchezsanchez2@edu.gva.es
+- **GitHub**: [@usuari](https://github.com/lorenasanchezsanchez)
 
 
-## :material-help-circle: Soporte
-Si tienes alguna duda o sugerencia, puedes:
-
-- Abrir una [__issue__](https://github.com/usuari/repositori/issues) en el repositorio
-- Contactar directamente con el autor/a
