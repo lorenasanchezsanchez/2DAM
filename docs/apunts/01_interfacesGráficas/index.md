@@ -5368,6 +5368,112 @@ La aplicación deberá demostrar **todos los bloques**:
 ### Condición fundamental: No se trata de demostrar que sabes utilizar controles por separado. Se trata de demostrar que sabes conectarlos para construir una aplicación funcional.**
 
 ---
+# Soluciones
+
+## 22.9 Preguntas de repaso (Conceptos)
+
+1. **¿Qué diferencia existe entre Stage, Scene y Node?**
+* **Stage:** Representa la finestra del sistema operatiu (el contenidor de nivell superior).
+* **Scene:** És el contenidor del contingut visual que es mostra *dins* d'un Stage.
+* **Node:** És qualsevol element individual dins de l'arbre de l'escena (botons, etiquetes, camps de text, layouts, etc.).
+
+
+2. **¿Qué función cumple Scene Builder?**
+És una eina visual de tipus *drag-and-drop* (arrossegar i deixar anar) que permet dissenyar interfícies d'usuari per a JavaFX de forma gràfica, generant automàticament el codi FXML corresponent.
+3. **¿Qué es FXML?**
+És un llenguatge basat en XML creat per Oracle per definir l'estructura de la interfície d'usuari en aplicacions JavaFX de manera declarativa, separant el disseny visual de la lògica de programació en Java.
+4. **¿Qué responsabilidad tiene un Controller?**
+Gestionar la lògica d'interacció d'una vista específica, responent als esdeveniments generats per l'usuari (com clics o escriptura) i actualitzant els components visuals o el model de dades.
+5. **¿Qué diferencia hay entre id y fx:id?**
+* **`id`:** S'utilitza principalment per aplicar estils CSS o identificar de forma genèrica un node.
+* **`fx:id`:** És l'identificador específic de JavaFX que permet enllaçar i injectar un component del FXML directament en una variable del Controller mitjançant l'anotació `@FXML`.
+
+
+6. **¿Para qué sirve FXMLLoader?**
+És la classe utilitària encarregada de llegir un arxiu FXML, instanciar els components visuals definits en ell, associar el seu controlador i construir l'arbre de nodes resultant llest per mostrar-se en una escena.
+7. **¿Qué hace @FXML?**
+És una anotació que permet al compilador i al carregador de JavaFX injectar components visuals o vincular mètodes privats/protegits definits en l'arxiu FXML amb la classe Controller.
+8. **¿Qué es initialize()?**
+És un mètode especial dins d'un Controller (implementant la interfície `Initializable` o mitjançant l'anotació `@FXML`) que JavaFX executa de forma automàtica just després de carregar i injectar tots els components del FXML. Serveix per configurar taules, estats inicials o esdeveniments.
+9. **¿Qué es un evento?**
+És un succés generat per l'usuari o pel sistema (com fer clic en un botó, moure el ratolí, pulsar una tecla o canviar el valor d'un camp) al qual l'aplicació pot reaccionar.
+10. **¿Qué diferencia existe entre un evento y un listener?**
+El **eveniment** és el objecte o el succés que encapsula l'acció ocorreguda, mentre que el **listener** (o manejador/handler) és el fragment de codi programat per escoltar i reaccionar quan dit eveniment es dispara.
+
+---
+
+## 22.10 Preguntas sobre layouts
+
+1. **¿Cuándo utilizarías VBox?**
+Quan necessites organitzar els elements fills seqüencialment de forma **vertical** (un davall de l'altre) en una única columna.
+2. **¿Cuándo utilizarías HBox?**
+Quan necessites organitzar els elements fills de forma **horitzontal** (un al costat de l'altre) en una única fila.
+3. **¿Para qué sirve GridPane?**
+Per organitzar els components en una estructura de **quadrícula basada en files i columnes**. És el layout ideal per a formularis on es requereix alinear etiquetes amb els seus respectius camps d'entrada.
+4. **¿Qué estructura proporciona BorderPane?**
+Divideix l'espai en **cinc regions principals**: Superior (*Top*), Inferior (*Bottom*), Esquerra (*Left*), Dreta (*Right*) i Centre (*Center*). És molt útil per a distribucions principals d'aplicacions (menús, barres laterals, àrees de contingut).
+5. **¿Qué diferencia conceptual existe entre StackPane y VBox?**
+* **`StackPane`** apila els elements uns damunt d'altres en l'eix Z (profunditat), útil per superposar capes o elements flotants.
+* **`VBox`** col·loca els elements de forma consecutiva de dalt a baix en l'eix Y.
+
+
+6. **¿Por qué debemos evitar interfaces basadas únicamente en posiciones?**
+Perquè generen dissenys rígids que no s'adapten dinàmicament quan l'usuari redimensiona la finestra, canvia la resolució o executa l'aplicació en un altre sistema operatiu amb tipus de lletra diferents.
+
+---
+
+## 22.11 Preguntas sobre FXML
+
+1. **¿Qué función tiene fx:controller?**
+Indica la ruta completa de la classe Java que actuarà com a controlador per a aquest arxiu FXML, vinculant la vista amb la seva lògica corresponent.
+2. **¿Cómo se conecta un TextField con un atributo del Controller?**
+Assignant un nom a l'atribut `fx:id` a l'etiqueta del `TextField` dins del FXML i declarant en el Controller una variable privada amb el mateix nom precedida per l'anotació `@FXML`.
+3. **¿Cómo se conecta un botón con un método?**
+Afegint l'atribut `onAction="#nombreMetodo"` a l'etiqueta del botó dins del FXML i creant un mètode amb aquest mateix nom al Controller (generalment anotat amb `@FXML`).
+4. **¿Qué ocurre si el método indicado en onAction no existe?**
+JavaFX llançarà una excepció en temps d'execució (`LoadException` o `NoSuchMethodException`) en intentar carregar la vista, indicant que no troba el mètode manejador associat al controlador.
+
+---
+
+## 22.12 Preguntas sobre CSS
+
+1. **¿Qué diferencia hay entre id y styleClass?**
+* **`id`** s'aplica mitjançant `#` i està pensat per identificar i estilitzar un **únic element** exclusiu en tota la interfície.
+* **`styleClass`** s'aplica mitjançant `.` i permet agrupar diversos components sota una mateixa classe CSS per compartir estils comuns.
+
+
+2. **¿Qué selector utilizarías para una clase CSS?**
+Un punt seguit del nom de la classe (per exemple, `.mi-boton`).
+3. **¿Por qué es preferible utilizar CSS externo en proyectos medianos?**
+Perquè permet separar clarament la presentació visual de l'estructura (FXML) i del codi (Java), facilitant el manteniment, la reutilització d'estils i la modificació global del disseny de l'aplicació.
+4. **¿Qué utilidad tiene una pseudoclase como :focused?**
+Permet aplicar regles d'estil dinàmiques a un component únicament quan aquest es troba seleccionat o actiu per rebre entrada de l'usuari (per exemple, canviant el color de la vora d'un camp de text en fer-hi clic).
+
+---
+
+## 22.13 Preguntas sobre validación y diálogos
+
+1. **¿Por qué debemos utilizar try/catch al convertir texto a número?**
+Porque si l'usuari introdueix caràcters no vàlids o deixa el camp buit, els mètodes de conversió (com `Double.parseDouble()`) llancen una excepció (`NumberFormatException`) que, de no ser controlada, aturaria o bloquejaria l'aplicació.
+2. **¿Qué tipo de Alert utilizarías para confirmar una eliminación?**
+Un `Alert` de tipus `AlertType.CONFIRMATION`, ja que està dissenyat específicament per mostrar missatges d'advertència que requereixen una resposta afirmativa o negativa de l'usuari (Acceptar/Cancel·lar).
+3. **¿Qué debe ocurrir si el usuario cancela una operación?**
+L'acció en curs s'ha d'avortar de manera segura, sense alterar les dades del model ni realitzar canvis a la base de dades, tancant el diàleg i retornant el control a la pantalla principal.
+4. **¿Por qué es importante mostrar mensajes de error claros?**
+Per millorar l'experiència d'usuari (UX), guiant de forma precisa sobre què ha fallat i què s'ha de corregir per reintentar l'acció amb èxit.
+
+---
+
+## 22.14 Preguntas sobre navegación
+
+1. **¿Cómo se puede cambiar la vista de una Scene?**
+Canviant el node arrel (*root*) de l'escena existent mitjançant el mètode `scene.setRoot(nuevoNodo)` o carregant un nou arxiu FXML i assignant-lo com a contingut principal del Stage.
+2. **¿Cuándo puede ser útil un BorderPane como estructura principal?**
+En aplicacions d'escriptori completes que consten de zones ben diferenciades, com una barra superior de menús (*Top*), un menú lateral de navegació (*Left*), una barra d'estat (*Bottom*) i un panell central dinàmic (*Center*) on es carreguen les diferents vistes.
+3. **¿Qué ventajas tiene separar las diferentes vistas en distintos FXML?**
+Favorix la modularitat, el principi de responsabilitat única, facilita el treball en equip i permet reutilitzar components o intercanviar pantalles de forma independent i neta.
+
+---
 
 
 # 22.16 Práctica final
