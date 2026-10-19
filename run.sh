@@ -87,6 +87,7 @@ if [ $INSTALL_VENV -eq 1 ]; then
     python3 -m venv venv
     print "Installing dependencies"
     ./venv/bin/pip install -r requirements.txt
+    ./venv/bin/pip install -e .
 fi
 
 source venv/bin/activate

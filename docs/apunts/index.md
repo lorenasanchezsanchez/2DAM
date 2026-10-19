@@ -1,29 +1,31 @@
 # Apunts
 
-Els apunts d'aquest curs estan dividits en els següents blocs:
+Los apuntes de este curso están divididos en los siguientes bloques:
 
 - [[introduccio-index]]
 - [[branques-index]]
+{% if not config.extra.publicado %}
 - [[remots-index]]
 - [[avancat-index]]
 - [[estrategies-index]]
 - [[projectes-index]]
 - [[educativa-index]]
+{% endif %}
 
-## Estructura recomanada
+## Estructura recomendada
 
-Cada bloc o unitat pot tenir la seua pròpia carpeta amb:
+Cada bloque o unidad puede tener su propia carpeta con:
 
-- `index.md`: Pàgina d'inici del bloc amb un resum i enllaços als temes
-- Fitxers de contingut (teoria, exercicis, exemples, etc.)
-- `transparencies.md`: Presentació per a classe (opcional)
-- `exercici.md`: Exercicis pràctics
-- `resum.md`: Resum de la unitat
-- Carpeta `img/`: Imatges relacionades amb el bloc
+- `index.md`: Página de inicio del bloque con un resumen y enlaces a los temas
+- Archivos de contenido (teoría, ejercicios, ejemplos, etc.)
+- `transparencies.md`: Presentación para clase (opcional)
+- `exercici.md`: Ejercicios prácticos
+- `resum.md`: Resumen de la unidad
+- Carpeta `img/`: Imágenes relacionadas con el bloque
 
-## Exemples d'organització
+## Ejemplos de organización
 
-### Opció 1: Per temes
+### Opción 1: Por temas
 ```
 docs/apunts/
 ├── 01_introduccio/
@@ -32,7 +34,7 @@ docs/apunts/
 └── 04_projecte/
 ```
 
-### Opció 2: Per tipus de contingut
+### Opción 2: Por tipo de contenido
 ```
 docs/apunts/
 ├── teoria/
@@ -41,8 +43,8 @@ docs/apunts/
 └── projectes/
 ```
 
-## Bloc d'exemple
-Hem deixat la carpeta `01_introduccio/` com a exemple d'estructura.
-Pots modificar-la o eliminar-la segons les teues necessitats.
+## Bloque de ejemplo
+Hemos dejado la carpeta `01_introduccio/` como ejemplo de estructura.
+Puedes modificarla o eliminarla según tus necesidades.
 
-- Unitat 1: Exemple d'introducció
+- Unidad 1: Ejemplo de introducción

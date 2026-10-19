@@ -1,9 +1,9 @@
 ---
 template: document.html
-title: "Bloc 4: Git avançat"
+title: "Bloque 4: Git avanzado"
 alias: avancat-index
 ---
 
-# Bloc 4: Git avançat
+# Bloque 4: Git avanzado
 
-Contingut en construcció.
+Contenido en construcción.

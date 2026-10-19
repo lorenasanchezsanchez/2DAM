@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="650" viewBox="0 0 1300 650">
+<rect width="1300" height="650" rx="30" fill="#fff"/>
+<text x="650" y="60" text-anchor="middle" font-family="Arial" font-size="38" font-weight="700" fill="#4E4A42">Separación de responsabilidades</text>
+<rect x="70" y="120" width="350" height="420" rx="25" fill="#eef9f9" stroke="#18D6C0" stroke-width="5"/>
+<text x="245" y="175" text-anchor="middle" font-family="Arial" font-size="32" font-weight="700" fill="#18D6C0">FXML</text>
+<text x="245" y="235" text-anchor="middle" font-family="Arial" font-size="24" fill="#4E4A42">¿Qué hay?</text>
+<text x="110" y="300" font-family="monospace" font-size="22" fill="#4E4A42">&lt;Label text="Nombre"/&gt;</text>
+<text x="110" y="350" font-family="monospace" font-size="22" fill="#4E4A42">&lt;TextField/&gt;</text>
+<text x="110" y="400" font-family="monospace" font-size="22" fill="#4E4A42">&lt;Button/&gt;</text>
+<rect x="475" y="120" width="350" height="420" rx="25" fill="#fff3f7" stroke="#EE4091" stroke-width="5"/>
+<text x="650" y="175" text-anchor="middle" font-family="Arial" font-size="32" font-weight="700" fill="#EE4091">Java</text>
+<text x="650" y="235" text-anchor="middle" font-family="Arial" font-size="24" fill="#4E4A42">¿Qué hace?</text>
+<text x="515" y="310" font-family="monospace" font-size="22" fill="#4E4A42">guardar()</text>
+<text x="515" y="360" font-family="monospace" font-size="22" fill="#4E4A42">validar()</text>
+<text x="515" y="410" font-family="monospace" font-size="22" fill="#4E4A42">cargar()</text>
+<rect x="880" y="120" width="350" height="420" rx="25" fill="#eef9f9" stroke="#18D6C0" stroke-width="5"/>
+<text x="1055" y="175" text-anchor="middle" font-family="Arial" font-size="32" font-weight="700" fill="#18D6C0">CSS</text>
+<text x="1055" y="235" text-anchor="middle" font-family="Arial" font-size="24" fill="#4E4A42">¿Cómo se ve?</text>
+<text x="920" y="310" font-family="monospace" font-size="22" fill="#4E4A42">.button {</text><text x="920" y="355" font-family="monospace" font-size="22" fill="#4E4A42">  -fx-font-size: 16px;</text><text x="920" y="400" font-family="monospace" font-size="22" fill="#4E4A42">}</text>
+</svg>

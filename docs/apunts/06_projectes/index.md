@@ -1,9 +1,9 @@
 ---
 template: document.html
-title: "Bloc 6: Gestió de projectes"
+title: "Bloque 6: Gestión de proyectos"
 alias: projectes-index
 ---
 
-# Bloc 6: Gestió de projectes
+# Bloque 6: Gestión de proyectos
 
-Contingut en construcció.
+Contenido en construcción.

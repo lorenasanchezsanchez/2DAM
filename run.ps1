@@ -43,6 +43,7 @@ if ($INSTALL_VENV -eq $true) {
     python -m venv venv
     Print-Message "Installing dependencies..."
     & "./venv/Scripts/pip" install -r requirements.txt
+    & "./venv/Scripts/pip" install -e .
 }
 
 # Determine command based on build flag

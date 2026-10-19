@@ -1,9 +1,9 @@
 ---
 template: document.html
-title: "Bloc 5: Estratègies de ramificació"
+title: "Bloque 5: Estrategias de ramificación"
 alias: estrategies-index
 ---
 
-# Bloc 5: Estratègies de ramificació
+# Bloque 5: Estrategias de ramificación
 
-Contingut en construcció.
+Contenido en construcción.

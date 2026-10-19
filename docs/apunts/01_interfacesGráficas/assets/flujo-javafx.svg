@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="500" viewBox="0 0 1400 500">
+<rect width="1400" height="500" rx="30" fill="#fff"/>
+<text x="700" y="65" text-anchor="middle" font-family="Arial" font-size="38" font-weight="700" fill="#4E4A42">De la interfaz al programa</text>
+<g font-family="Arial" text-anchor="middle" font-weight="700" font-size="25">
+<rect x="50" y="180" width="210" height="130" rx="22" fill="#C8EDED" stroke="#18D6C0" stroke-width="4"/><text x="155" y="235" fill="#4E4A42">Scene Builder</text><text x="155" y="275" fill="#4E4A42" font-size="20">Diseño visual</text>
+<rect x="315" y="180" width="210" height="130" rx="22" fill="#FDB3CA" stroke="#EE4091" stroke-width="4"/><text x="420" y="235" fill="#4E4A42">FXML</text><text x="420" y="275" fill="#4E4A42" font-size="20">Estructura</text>
+<rect x="580" y="180" width="210" height="130" rx="22" fill="#C8EDED" stroke="#18D6C0" stroke-width="4"/><text x="685" y="235" fill="#4E4A42">Controller</text><text x="685" y="275" fill="#4E4A42" font-size="20">Java</text>
+<rect x="845" y="180" width="210" height="130" rx="22" fill="#FDB3CA" stroke="#EE4091" stroke-width="4"/><text x="950" y="235" fill="#4E4A42">Eventos</text><text x="950" y="275" fill="#4E4A42" font-size="20">Interacción</text>
+<rect x="1110" y="180" width="240" height="130" rx="22" fill="#C8EDED" stroke="#18D6C0" stroke-width="4"/><text x="1230" y="235" fill="#4E4A42">CSS</text><text x="1230" y="275" fill="#4E4A42" font-size="20">Apariencia</text>
+</g>
+<g stroke="#18D6C0" stroke-width="6" fill="none"><path d="M260 245 H315"/><path d="M525 245 H580"/><path d="M790 245 H845"/><path d="M1055 245 H1110"/></g>
+</svg>

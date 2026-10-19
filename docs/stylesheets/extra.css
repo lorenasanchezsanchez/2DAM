@@ -28,3 +28,44 @@
 .pr-closed {
   color: #b60205;
 }
+
+/* Estilos de la presentación (portados desde Marp) */
+.md-typeset .index {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1.2rem;
+  font-size: 0.85em;
+  line-height: 1.3;
+}
+.md-typeset .index h3 {
+  margin: 0.4em 0 0.3em;
+  color: #ee4091;
+}
+.md-typeset .index ul {
+  margin: 0.15em 0 0.8em;
+}
+.md-typeset .box {
+  padding: 0.8rem 1.2rem;
+  background: #f4fcfc;
+  border-left: 6px solid #18d6c0;
+  margin: 1em 0;
+}
+.md-typeset .box h3 {
+  margin-top: 0;
+}
+.md-typeset .warn {
+  padding: 0.8rem 1.2rem;
+  background: #fff3f7;
+  border-left: 6px solid #ee4091;
+}
+.md-typeset .two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+.md-typeset .center {
+  text-align: center;
+}
+[data-md-color-scheme="slate"] .md-typeset .box {
+  background: rgba(24, 214, 192, 0.1);
+}

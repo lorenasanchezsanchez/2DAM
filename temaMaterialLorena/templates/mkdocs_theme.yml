@@ -1,6 +1,6 @@
 extends: material
 
-language: ca
+language: es
 
 cover:
   logo: 'img/cover/cipfp-mislata.svg'
@@ -32,7 +32,7 @@ palette:
     toggle:
       # icon: material/toggle-switch
       icon: material/weather-sunny
-      name: Switch to dark mode
+      name: Cambiar a modo oscuro
 
   # Palette toggle for dark mode
   - media: "(prefers-color-scheme: dark)"
@@ -40,10 +40,10 @@ palette:
     toggle:
       # icon: material/toggle-switch-off-outline
       icon: material/weather-night
-      name: Switch to light mode
+      name: Cambiar a modo claro
 
 license:
   type: "CC BY-NC-SA 4.0"
-  text: "(Reconeixement - NoComercial - CompartirIgual) &#x1f16d;"
-  link: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca
+  text: "(Reconocimiento - NoComercial - CompartirIgual) &#x1f16d;"
+  link: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es
   image: img/license/by-nc-sa.png

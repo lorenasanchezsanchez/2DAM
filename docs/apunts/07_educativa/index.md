@@ -1,9 +1,9 @@
 ---
 template: document.html
-title: "Bloc 7: GitHub com a plataforma educativa"
+title: "Bloque 7: GitHub como plataforma educativa"
 alias: educativa-index
 ---
 
-# Bloc 7: GitHub com a plataforma educativa
+# Bloque 7: GitHub como plataforma educativa
 
-Contingut en construcció.
+Contenido en construcción.

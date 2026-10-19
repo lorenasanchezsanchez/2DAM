@@ -107,7 +107,7 @@
     <p><a href="mailto:{{ email }}">{{ email }}</a></p>
     {% endif %}
     {% if curs %}
-    <p><strong>Curs:</strong> {{ curs }}</p>
+    <p><strong>Curso:</strong> {{ curs }}</p>
     {% endif %}
 </div> <!--details-->
 {% endblock %}
@@ -116,10 +116,10 @@
 <div class="cover__license">
 
 {% if original_author %}
-<p>Aquest material és una obra derivada a partir del material de: <strong>{{ original_author }}</strong></p>
+<p>Este material es una obra derivada a partir del material de: <strong>{{ original_author }}</strong></p>
 {% endif %}
 
-<p><strong>Llicència: {{ license_type }}</strong></p>
+<p><strong>Licencia: {{ license_type }}</strong></p>
 {% if license_text %}
 <p class="">{{license_text}}</p>
 {% endif %}

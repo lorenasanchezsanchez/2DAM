@@ -1,9 +1,9 @@
 ---
 template: document.html
-title: "Bloc 3: Remots"
+title: "Bloque 3: Remotos"
 alias: remots-index
 ---
 
-# Bloc 3: Remots
+# Bloque 3: Remotos
 
-Contingut en construcció.
+Contenido en construcción.

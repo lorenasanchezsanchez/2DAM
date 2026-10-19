@@ -11,9 +11,19 @@ repo_url: https://github.com/lorenasanchezsanchez/CURS_GIT
 extra_css:
   - stylesheets/extra.css
 
+extra:
+  # true en GitHub Actions (CI): oculta los bloques en borrador al publicar
+  publicado: !ENV [CI, false]
+
 draft_docs: |
   *_unpublished.md
   *_draft.md
+  # Bloques visibles solo en local (mkdocs serve); se excluyen al publicar
+  03_remots/
+  04_avancat/
+  05_estrategies/
+  06_projectes/
+  07_educativa/
 
 exclude_docs: |
   *_excluded.md
@@ -21,6 +31,7 @@ exclude_docs: |
 
 watch:
   - overrides
+  - temaMaterialLorena/templates
 
 theme:
   name: temaMaterialLorena
@@ -51,7 +62,7 @@ theme:
       toggle:
         # icon: material/toggle-switch
         icon: material/weather-sunny
-        name: Canvia a mode fosc
+        name: Cambiar a modo oscuro
 
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
@@ -60,7 +71,7 @@ theme:
       toggle:
         # icon: material/toggle-switch-off-outline
         icon: material/weather-night
-        name: Canvia a mode clar
+        name: Cambiar a modo claro
 
 plugins:
   - alias:
@@ -80,28 +91,28 @@ plugins:
   - temaMaterialLorena/sectionicons
   - i18n:
       languages:
-        - locale: ca
+        - locale: es
           default: true
-          name: Valencià
+          name: Español
           admonition_translations:
-            info: Informació
+            info: Información
             note: Nota
-            abstract: Resum
-            tip: Consell
-            success: Èxit
+            abstract: Resumen
+            tip: Consejo
+            success: Éxito
             question: Pregunta
-            warning: Advertència
+            warning: Advertencia
             failure: Error
-            danger: Perill
-            example: Exemple
+            danger: Peligro
+            example: Ejemplo
             quote: Cita
-            docs: Documentació
-            solution: Solució
-            important: Important
-            notice: Fixa't
-            prep: Preparació
-            recommend: Recomanació
-            picture: Imatge
+            docs: Documentación
+            solution: Solución
+            important: Importante
+            notice: Fíjate
+            prep: Preparación
+            recommend: Recomendación
+            picture: Imagen
   - git-revision-date-localized:
       enable_creation_date: true
       type: date
@@ -135,7 +146,7 @@ markdown_extensions:
           prefix: "Figura {}. "
           classes: shadow
         - name: "table-caption"
-          prefix: "Taula {}. "
+          prefix: "Tabla {}. "
         - name: attribution
           classes: attribution
   - pymdownx.details
