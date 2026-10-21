@@ -1,29 +1,20 @@
-site_name: "Nombre"
+site_name: "2DAM Desarrollo de Interfaces"
 site_author: "Lorena Sánchez Sánchez"
-site_url: https://lorenasanchezsanchez.github.io/NombreRepo/
+site_url: https://lorenasanchezsanchez.github.io/2DAM_Desarrollo_de_Interfaces
 dev_addr: 127.0.0.1:4567
 
-repo_name: lorenasanchezsanchez/CURS_GIT
-repo_url: https://github.com/lorenasanchezsanchez/CURS_GIT
+
+repo_name: lorenasanchezsanchez/2DAM_Desarrollo_de_Interfaces
+repo_url: https://github.com/lorenasanchezsanchez/2DAM_Desarrollo_de_Interfaces
 
 
 
 extra_css:
   - stylesheets/extra.css
 
-extra:
-  # true en GitHub Actions (CI): oculta los bloques en borrador al publicar
-  publicado: !ENV [CI, false]
-
 draft_docs: |
   *_unpublished.md
   *_draft.md
-  # Bloques visibles solo en local (mkdocs serve); se excluyen al publicar
-  03_remots/
-  04_avancat/
-  05_estrategies/
-  06_projectes/
-  07_educativa/
 
 exclude_docs: |
   *_excluded.md
@@ -31,7 +22,6 @@ exclude_docs: |
 
 watch:
   - overrides
-  - temaMaterialLorena/templates
 
 theme:
   name: temaMaterialLorena
@@ -57,21 +47,21 @@ theme:
   # Palette toggle for light mode
   palette:
     - media: "(prefers-color-scheme: light)"
-      primary: 'pink'
+      primary: 'custom'
       scheme: default
       toggle:
         # icon: material/toggle-switch
         icon: material/weather-sunny
-        name: Cambiar a modo oscuro
+        name: Canvia a mode fosc
 
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
-      primary: 'pink'
+      primary: 'custom'
       scheme: slate
       toggle:
         # icon: material/toggle-switch-off-outline
         icon: material/weather-night
-        name: Cambiar a modo claro
+        name: Canvia a mode clar
 
 plugins:
   - alias:
@@ -91,28 +81,28 @@ plugins:
   - temaMaterialLorena/sectionicons
   - i18n:
       languages:
-        - locale: es
+        - locale: ca
           default: true
-          name: Español
+          name: Valencià
           admonition_translations:
-            info: Información
+            info: Informació
             note: Nota
-            abstract: Resumen
-            tip: Consejo
-            success: Éxito
+            abstract: Resum
+            tip: Consell
+            success: Èxit
             question: Pregunta
-            warning: Advertencia
+            warning: Advertència
             failure: Error
-            danger: Peligro
-            example: Ejemplo
+            danger: Perill
+            example: Exemple
             quote: Cita
-            docs: Documentación
-            solution: Solución
-            important: Importante
-            notice: Fíjate
-            prep: Preparación
-            recommend: Recomendación
-            picture: Imagen
+            docs: Documentació
+            solution: Solució
+            important: Important
+            notice: Fixa't
+            prep: Preparació
+            recommend: Recomanació
+            picture: Imatge
   - git-revision-date-localized:
       enable_creation_date: true
       type: date
@@ -146,7 +136,7 @@ markdown_extensions:
           prefix: "Figura {}. "
           classes: shadow
         - name: "table-caption"
-          prefix: "Tabla {}. "
+          prefix: "Taula {}. "
         - name: attribution
           classes: attribution
   - pymdownx.details
