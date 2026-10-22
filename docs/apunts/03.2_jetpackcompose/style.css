@@ -9024,12 +9024,7 @@
 
  /*# sourceMappingURL=just-the-docs-default.css.map */
 
- <link data-savepage-disabled="" rel="stylesheet"
- data-savepage-href="/tutorials-pmdm/assets/css/just-the-docs-head-nav.css" href="" id="jtd-head-nav-stylesheet"
- disabled="">< !-- Activation CSS --><style data-savepage-disabled="" id="jtd-nav-activation"></style>< !-- Search JavaScript - CRÍTICO para que funcione la búsqueda --><script data-savepage-type="" type="text/plain"
- data-savepage-src="/tutorials-pmdm/assets/js/vendor/lunr.min.js"></script>< !-- Just the Docs main JavaScript --><script data-savepage-type="" type="text/plain"
- data-savepage-src="/tutorials-pmdm/assets/js/just-the-docs.js"></script>< !-- Nuestros estilos personalizados -->< !-- Add favicon and meta tags for better SEO and accessibility --><link rel="icon" type="image/svg+xml" data-savepage-href="/tutorials-pmdm/assets/images/favicon.svg"
- href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiM2NzUwQTQ7c3RvcC1vcGFjaXR5OjEiIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6I0VBRERGRjtzdG9wLW9wYWNpdHk6MSIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgcng9IjYiIGZpbGw9InVybCgjZ3JhZCkiLz4KICA8dGV4dCB4PSIxNiIgeT0iMjIiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSI+UDwvdGV4dD4KPC9zdmc+"><link rel="alternate icon" data-savepage-href="/tutorials-pmdm/assets/images/favicon.svg" href=""><style data-savepage-href="/tutorials-pmdm/assets/css/style.css">
+ 
  /* CSS personalitzat per Just the Docs */
 
  /* Carrega la font local d'emojis per assegurar compatibilitat en tots els sistemes */
@@ -9698,9 +9693,7 @@
      }
  }
 
- </style><meta name="theme-color" content="#0B57D0"><meta name="viewport" content="width=device-width, initial-scale=1.0">< !-- Enhanced SEO meta tags --><meta property="og:title" content="Compose Multiplatform"><meta property="og:description"
-
- content="Tutorials pràctics per aprendre a desenvolupar aplicacions mòbils i videojocs."><meta property="og:type" content="article"><meta property="og:url" content="https://lawer.github.io/tutorials-pmdm/docs/compose-multiplatform/">< !-- Basic CSS for Java/Kotlin tabs --><style>.code-tabs {
+.code-tabs {
      margin: 1rem 0;
      border: 1px solid #e0e0e0;
      border-radius: 8px;
@@ -9965,12 +9958,7 @@
          display: none !important;
      }
  }
-
- </style>< !-- Simple JavaScript for tab functionality --><script data-savepage-type="" type="text/plain"></script>< !-- Suport per a fórmules matemàtiques amb MathJax 3 --><script data-savepage-type="" type="text/plain"></script><script data-savepage-type="" type="text/plain" id="MathJax-script" async=""
- data-savepage-src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>< !-- Personalitzacions JavaScript addicionals --><script data-savepage-type="" type="text/plain" defer=""
- data-savepage-src="/tutorials-pmdm/assets/js/custom.js"></script><link type="application/atom+xml" rel="alternate" data-savepage-href="https://lawer.github.io/tutorials-pmdm/feed.xml"
-
- href="" title="Tutorials PMDM"><style type="text/css">.CtxtMenu_InfoClose {
+.CtxtMenu_InfoClose {
      top: .2em;
      right: .2em;
  }
@@ -10034,7 +10022,7 @@
      /* IE */
  }
 
- </style><style type="text/css">.CtxtMenu_MenuClose {
+.CtxtMenu_MenuClose {
      position: absolute;
      cursor: pointer;
      display: inline-block;
@@ -10079,8 +10067,7 @@
  .CtxtMenu_MenuClose:hover:focus {
      outline: none
  }
-
- </style><style type="text/css">.CtxtMenu_Menu {
+.CtxtMenu_Menu {
      position: absolute;
      background-color: white;
      color: black;
@@ -10264,7 +10251,7 @@
      left: -10px
  }
 
- </style><style id="MJX-CHTML-styles">mjx-container[jax="CHTML"] {
+mjx-container[jax="CHTML"] {
      line-height: 0;
  }
 
