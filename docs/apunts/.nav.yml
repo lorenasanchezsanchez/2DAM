@@ -1,5 +1,5 @@
 nav:
-    - "*"
+
     - "Bloque 1: Interfaces gráficas con editor visual": 01_interfacesGráficas
     - "Bloque 2: Interfaces Naturales de Usuario": 02_interfacesNaturales
     - "Bloque 3: Componentes Visuales": 
