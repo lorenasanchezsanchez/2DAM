@@ -6,4 +6,4 @@ nav:
         - "3.2: Compose Multiplatform":
             - "3.2: Compose Multiplatform": "https://lawer.github.io/tutorials-pmdm/docs/compose-multiplatform/"
             - "Pràctica inicial: projecte i Hola Compose" : "https://lawer.github.io/tutorials-pmdm/docs/compose-multiplatform/practica-inicial.html"
-            - "3.2.1: Crear Projecte": 
+            - "3.2.1: Crear Projecte": 03.2_jetpackcompose/3.2.1.md
