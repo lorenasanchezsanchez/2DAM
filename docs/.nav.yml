@@ -1,4 +1,5 @@
 nav:
     - "*"
     - "Apuntes": apunts
+    - "Actividades": actividades
     - "Información": informacio.md

@@ -1,0 +1,6 @@
+nav:
+    - "Bloque 2: Interfaces Naturales de Usuario": 
+            - "Actividad 1": 
+                - "Solución Actividad 1": actividades/02_interfacesNaturalesUsuario/act1/solucion_actividad1.md
+                - "Gradle y Maven": actividades/02_interfacesNaturalesUsuario/act1/gradle_maven.md
+            

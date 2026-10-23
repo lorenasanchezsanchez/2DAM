@@ -4,5 +4,6 @@ nav:
     - "Bloque 3: Componentes Visuales": 
         - "3.1: Componentes Visuales": 03_componentesVisuales
         - "3.2: Compose Multiplatform":
-            - "3.2: Compose Multiplatform": 03.2_jetpackcompose
-            - "3.2.1: Crear Projecte": apunts/03.2_jetpackcompose/3.2.1_crear_projecte.html
+            - "3.2: Compose Multiplatform": "https://lawer.github.io/tutorials-pmdm/docs/compose-multiplatform/"
+            - "Pràctica inicial: projecte i Hola Compose" : "https://lawer.github.io/tutorials-pmdm/docs/compose-multiplatform/practica-inicial.html"
+            - "3.2.1: Crear Projecte": 
