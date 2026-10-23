@@ -4,5 +4,4 @@ nav:
     - "Bloque 3: Componentes Visuales": 
         - "3.1: Componentes Visuales": 03_componentesVisuales
         - "3.2: Compose Multiplatform":
-            - "3.2: Compose Multiplatform": 03.2_jetpackcompose
-            - "3.2.1: Crear Projecte": 3.2.1_crear_projecte
+            - "3.2.1: Crear Projecte": 3.2.1_crear_projecte.html
